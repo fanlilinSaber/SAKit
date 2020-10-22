@@ -1,0 +1,830 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		484002D8253D31E4001C971A /* SAFPCoreDataPersistence.h in Headers */ = {isa = PBXBuildFile; fileRef = 484002D6253D31E4001C971A /* SAFPCoreDataPersistence.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		484002D9253D31E4001C971A /* SAFPCoreDataPersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = 484002D7253D31E4001C971A /* SAFPCoreDataPersistence.m */; };
+		484002DC253D324B001C971A /* SAFPPersistence.h in Headers */ = {isa = PBXBuildFile; fileRef = 484002DB253D3241001C971A /* SAFPPersistence.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		484002E6253D7C75001C971A /* SAFPDownloaderOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 484002E4253D7C75001C971A /* SAFPDownloaderOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		484002E7253D7C75001C971A /* SAFPDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 484002E5253D7C75001C971A /* SAFPDownloaderOperation.m */; };
+		484002ED253D98B0001C971A /* SAFilePreviewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 484002EB253D98B0001C971A /* SAFilePreviewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		484002EE253D98B0001C971A /* SAFilePreviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 484002EC253D98B0001C971A /* SAFilePreviewCell.m */; };
+		485753A32538A091002C68DA /* LEEAlertHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 485753A02538A091002C68DA /* LEEAlertHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		485753A42538A091002C68DA /* LEEAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 485753A12538A091002C68DA /* LEEAlert.m */; };
+		485753A52538A091002C68DA /* LEEAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = 485753A22538A091002C68DA /* LEEAlert.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		485753AB2538B292002C68DA /* UIViewController+SA.h in Headers */ = {isa = PBXBuildFile; fileRef = 485753A92538B292002C68DA /* UIViewController+SA.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		485753AC2538B292002C68DA /* UIViewController+SA.m in Sources */ = {isa = PBXBuildFile; fileRef = 485753AA2538B292002C68DA /* UIViewController+SA.m */; };
+		485753F4253997DF002C68DA /* SAKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48693BAA2536A2FC0089364E /* SAKit.framework */; };
+		485753F5253997DF002C68DA /* SAKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 48693BAA2536A2FC0089364E /* SAKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		48693BAF2536A2FC0089364E /* SAKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 48693BAD2536A2FC0089364E /* SAKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48693BBE2536A3190089364E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48693BBD2536A3190089364E /* AppDelegate.m */; };
+		48693BC42536A3190089364E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48693BC32536A3190089364E /* ViewController.m */; };
+		48693BC72536A3190089364E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48693BC52536A3190089364E /* Main.storyboard */; };
+		48693BC92536A31A0089364E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48693BC82536A31A0089364E /* Assets.xcassets */; };
+		48693BCC2536A31A0089364E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48693BCA2536A31A0089364E /* LaunchScreen.storyboard */; };
+		48693BCF2536A31A0089364E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48693BCE2536A31A0089364E /* main.m */; };
+		48693BF62536A3630089364E /* MSTFileDownloaderError.m in Sources */ = {isa = PBXBuildFile; fileRef = 48693BDD2536A3620089364E /* MSTFileDownloaderError.m */; };
+		48693BF72536A3630089364E /* MSTFileDownloadToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 48693BDE2536A3620089364E /* MSTFileDownloadToken.m */; };
+		48693BF82536A3630089364E /* MSTFileDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 48693BDF2536A3620089364E /* MSTFileDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48693BF92536A3630089364E /* MSTFileDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 48693BE02536A3620089364E /* MSTFileDownloaderOperation.m */; };
+		48693BFA2536A3630089364E /* MSTFileDownloaderConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 48693BE12536A3620089364E /* MSTFileDownloaderConfig.m */; };
+		48693BFB2536A3630089364E /* MMALoadersManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 48693BE22536A3620089364E /* MMALoadersManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48693BFC2536A3630089364E /* MSTFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 48693BE32536A3620089364E /* MSTFileManager.m */; };
+		48693BFD2536A3630089364E /* MSTRnLoaderMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 48693BE42536A3620089364E /* MSTRnLoaderMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48693BFE2536A3630089364E /* MSTFileDownloadToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 48693BE52536A3620089364E /* MSTFileDownloadToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48693BFF2536A3630089364E /* MSTFileDownloaderError.h in Headers */ = {isa = PBXBuildFile; fileRef = 48693BE62536A3620089364E /* MSTFileDownloaderError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48693C002536A3630089364E /* MSTWebFileOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 48693BE72536A3620089364E /* MSTWebFileOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48693C012536A3630089364E /* MSTFileDownloaderOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 48693BE82536A3620089364E /* MSTFileDownloaderOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48693C022536A3630089364E /* MSTFileDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 48693BE92536A3630089364E /* MSTFileDownloader.m */; };
+		48693C032536A3630089364E /* BSDIFF.m in Sources */ = {isa = PBXBuildFile; fileRef = 48693BEB2536A3630089364E /* BSDIFF.m */; };
+		48693C042536A3630089364E /* bsdpatch.c in Sources */ = {isa = PBXBuildFile; fileRef = 48693BEC2536A3630089364E /* bsdpatch.c */; };
+		48693C052536A3630089364E /* bsdpatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 48693BED2536A3630089364E /* bsdpatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48693C062536A3630089364E /* BSDIFF.h in Headers */ = {isa = PBXBuildFile; fileRef = 48693BEE2536A3630089364E /* BSDIFF.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48693C072536A3630089364E /* MSTFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 48693BEF2536A3630089364E /* MSTFileManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48693C082536A3630089364E /* MMALoadersManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 48693BF02536A3630089364E /* MMALoadersManager.m */; };
+		48693C092536A3630089364E /* MSTFileDownloaderConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 48693BF12536A3630089364E /* MSTFileDownloaderConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48693C0E2536A3720089364E /* SARouterNP.h in Headers */ = {isa = PBXBuildFile; fileRef = 48693C0C2536A3720089364E /* SARouterNP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48693C0F2536A3720089364E /* SARouterNP.m in Sources */ = {isa = PBXBuildFile; fileRef = 48693C0D2536A3720089364E /* SARouterNP.m */; };
+		48693C142536A3910089364E /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 48693C132536A37E0089364E /* libbz2.tbd */; };
+		48693C7D2536F2E50089364E /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 48693C7C2536F2E50089364E /* DataModel.m */; };
+		4890CD172537F77E0058DE06 /* SAQFilePreviewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4890CD152537F77E0058DE06 /* SAQFilePreviewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4890CD182537F77E0058DE06 /* SAQFilePreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4890CD162537F77E0058DE06 /* SAQFilePreviewController.m */; };
+		4890CD1C2537F7D00058DE06 /* SAFileInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 4890CD1A2537F7D00058DE06 /* SAFileInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4890CD1D2537F7D00058DE06 /* SAFileInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4890CD1B2537F7D00058DE06 /* SAFileInfo.m */; };
+		4890CD2A253835DE0058DE06 /* LEEAlert+FileDownload.h in Headers */ = {isa = PBXBuildFile; fileRef = 4890CD28253835DE0058DE06 /* LEEAlert+FileDownload.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4890CD2B253835DE0058DE06 /* LEEAlert+FileDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 4890CD29253835DE0058DE06 /* LEEAlert+FileDownload.m */; };
+		4890CD3525384A8A0058DE06 /* NSObject+FileSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 4890CD3325384A8A0058DE06 /* NSObject+FileSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4890CD3625384A8A0058DE06 /* NSObject+FileSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 4890CD3425384A8A0058DE06 /* NSObject+FileSize.m */; };
+		489904DA2537E950008AF2B4 /* SAFilePreviewViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 489904D82537E950008AF2B4 /* SAFilePreviewViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		489904DB2537E950008AF2B4 /* SAFilePreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 489904D92537E950008AF2B4 /* SAFilePreviewViewController.m */; };
+		4CC84642E5545854F104AA8E /* libPods-SAKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB7CAFCFA0F40F0B68F5BFE3 /* libPods-SAKit.a */; };
+		E96476388ECB74B3CAF97789 /* libPods-SAKit IOS Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCD8D52FED8DB87DDFF38676 /* libPods-SAKit IOS Example.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		485753F6253997DF002C68DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48693BA12536A2FC0089364E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48693BA92536A2FC0089364E;
+			remoteInfo = SAKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		485753F8253997DF002C68DA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				485753F5253997DF002C68DA /* SAKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		47218AA74715C0CF88643D91 /* Pods-SAKit IOS Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAKit IOS Example.release.xcconfig"; path = "Target Support Files/Pods-SAKit IOS Example/Pods-SAKit IOS Example.release.xcconfig"; sourceTree = "<group>"; };
+		484002D6253D31E4001C971A /* SAFPCoreDataPersistence.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAFPCoreDataPersistence.h; sourceTree = "<group>"; };
+		484002D7253D31E4001C971A /* SAFPCoreDataPersistence.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAFPCoreDataPersistence.m; sourceTree = "<group>"; };
+		484002DB253D3241001C971A /* SAFPPersistence.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAFPPersistence.h; sourceTree = "<group>"; };
+		484002E4253D7C75001C971A /* SAFPDownloaderOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAFPDownloaderOperation.h; sourceTree = "<group>"; };
+		484002E5253D7C75001C971A /* SAFPDownloaderOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAFPDownloaderOperation.m; sourceTree = "<group>"; };
+		484002EB253D98B0001C971A /* SAFilePreviewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAFilePreviewCell.h; sourceTree = "<group>"; };
+		484002EC253D98B0001C971A /* SAFilePreviewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAFilePreviewCell.m; sourceTree = "<group>"; };
+		485753A02538A091002C68DA /* LEEAlertHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEEAlertHelper.h; sourceTree = "<group>"; };
+		485753A12538A091002C68DA /* LEEAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEEAlert.m; sourceTree = "<group>"; };
+		485753A22538A091002C68DA /* LEEAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEEAlert.h; sourceTree = "<group>"; };
+		485753A92538B292002C68DA /* UIViewController+SA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SA.h"; sourceTree = "<group>"; };
+		485753AA2538B292002C68DA /* UIViewController+SA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SA.m"; sourceTree = "<group>"; };
+		48693BAA2536A2FC0089364E /* SAKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SAKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48693BAD2536A2FC0089364E /* SAKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAKit.h; sourceTree = "<group>"; };
+		48693BAE2536A2FC0089364E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48693BBA2536A3190089364E /* SAKit IOS Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SAKit IOS Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		48693BBC2536A3190089364E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		48693BBD2536A3190089364E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		48693BC22536A3190089364E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		48693BC32536A3190089364E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		48693BC62536A3190089364E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		48693BC82536A31A0089364E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		48693BCB2536A31A0089364E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		48693BCD2536A31A0089364E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48693BCE2536A31A0089364E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		48693BDD2536A3620089364E /* MSTFileDownloaderError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSTFileDownloaderError.m; sourceTree = "<group>"; };
+		48693BDE2536A3620089364E /* MSTFileDownloadToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSTFileDownloadToken.m; sourceTree = "<group>"; };
+		48693BDF2536A3620089364E /* MSTFileDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSTFileDownloader.h; sourceTree = "<group>"; };
+		48693BE02536A3620089364E /* MSTFileDownloaderOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSTFileDownloaderOperation.m; sourceTree = "<group>"; };
+		48693BE12536A3620089364E /* MSTFileDownloaderConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSTFileDownloaderConfig.m; sourceTree = "<group>"; };
+		48693BE22536A3620089364E /* MMALoadersManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMALoadersManager.h; sourceTree = "<group>"; };
+		48693BE32536A3620089364E /* MSTFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSTFileManager.m; sourceTree = "<group>"; };
+		48693BE42536A3620089364E /* MSTRnLoaderMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSTRnLoaderMacros.h; sourceTree = "<group>"; };
+		48693BE52536A3620089364E /* MSTFileDownloadToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSTFileDownloadToken.h; sourceTree = "<group>"; };
+		48693BE62536A3620089364E /* MSTFileDownloaderError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSTFileDownloaderError.h; sourceTree = "<group>"; };
+		48693BE72536A3620089364E /* MSTWebFileOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSTWebFileOperation.h; sourceTree = "<group>"; };
+		48693BE82536A3620089364E /* MSTFileDownloaderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSTFileDownloaderOperation.h; sourceTree = "<group>"; };
+		48693BE92536A3630089364E /* MSTFileDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSTFileDownloader.m; sourceTree = "<group>"; };
+		48693BEB2536A3630089364E /* BSDIFF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSDIFF.m; sourceTree = "<group>"; };
+		48693BEC2536A3630089364E /* bsdpatch.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bsdpatch.c; sourceTree = "<group>"; };
+		48693BED2536A3630089364E /* bsdpatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bsdpatch.h; sourceTree = "<group>"; };
+		48693BEE2536A3630089364E /* BSDIFF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSDIFF.h; sourceTree = "<group>"; };
+		48693BEF2536A3630089364E /* MSTFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSTFileManager.h; sourceTree = "<group>"; };
+		48693BF02536A3630089364E /* MMALoadersManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMALoadersManager.m; sourceTree = "<group>"; };
+		48693BF12536A3630089364E /* MSTFileDownloaderConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSTFileDownloaderConfig.h; sourceTree = "<group>"; };
+		48693C0C2536A3720089364E /* SARouterNP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SARouterNP.h; sourceTree = "<group>"; };
+		48693C0D2536A3720089364E /* SARouterNP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SARouterNP.m; sourceTree = "<group>"; };
+		48693C132536A37E0089364E /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libbz2.tbd; sourceTree = DEVELOPER_DIR; };
+		48693C2A2536A7640089364E /* SSZipArchive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SSZipArchive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48693C2D2536A7740089364E /* SSZipArchive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SSZipArchive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48693C7B2536F2E50089364E /* DataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
+		48693C7C2536F2E50089364E /* DataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
+		4890CD152537F77E0058DE06 /* SAQFilePreviewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAQFilePreviewController.h; sourceTree = "<group>"; };
+		4890CD162537F77E0058DE06 /* SAQFilePreviewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAQFilePreviewController.m; sourceTree = "<group>"; };
+		4890CD1A2537F7D00058DE06 /* SAFileInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAFileInfo.h; sourceTree = "<group>"; };
+		4890CD1B2537F7D00058DE06 /* SAFileInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAFileInfo.m; sourceTree = "<group>"; };
+		4890CD28253835DE0058DE06 /* LEEAlert+FileDownload.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LEEAlert+FileDownload.h"; sourceTree = "<group>"; };
+		4890CD29253835DE0058DE06 /* LEEAlert+FileDownload.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LEEAlert+FileDownload.m"; sourceTree = "<group>"; };
+		4890CD3325384A8A0058DE06 /* NSObject+FileSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+FileSize.h"; sourceTree = "<group>"; };
+		4890CD3425384A8A0058DE06 /* NSObject+FileSize.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FileSize.m"; sourceTree = "<group>"; };
+		489904D82537E950008AF2B4 /* SAFilePreviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAFilePreviewViewController.h; sourceTree = "<group>"; };
+		489904D92537E950008AF2B4 /* SAFilePreviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAFilePreviewViewController.m; sourceTree = "<group>"; };
+		7625809AE0C7AA8A80FCD562 /* Pods-SAKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAKit.debug.xcconfig"; path = "Target Support Files/Pods-SAKit/Pods-SAKit.debug.xcconfig"; sourceTree = "<group>"; };
+		974DD216CB468D8DF97155F3 /* Pods-SAKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAKit.release.xcconfig"; path = "Target Support Files/Pods-SAKit/Pods-SAKit.release.xcconfig"; sourceTree = "<group>"; };
+		A693004A5FB105C7DB1A5D38 /* Pods-SAKit IOS Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAKit IOS Example.debug.xcconfig"; path = "Target Support Files/Pods-SAKit IOS Example/Pods-SAKit IOS Example.debug.xcconfig"; sourceTree = "<group>"; };
+		BB7CAFCFA0F40F0B68F5BFE3 /* libPods-SAKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SAKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCD8D52FED8DB87DDFF38676 /* libPods-SAKit IOS Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SAKit IOS Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		48693BA72536A2FC0089364E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48693C142536A3910089364E /* libbz2.tbd in Frameworks */,
+				4CC84642E5545854F104AA8E /* libPods-SAKit.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48693BB72536A3190089364E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E96476388ECB74B3CAF97789 /* libPods-SAKit IOS Example.a in Frameworks */,
+				485753F4253997DF002C68DA /* SAKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41DBB8C37928319A23DB54E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7625809AE0C7AA8A80FCD562 /* Pods-SAKit.debug.xcconfig */,
+				974DD216CB468D8DF97155F3 /* Pods-SAKit.release.xcconfig */,
+				A693004A5FB105C7DB1A5D38 /* Pods-SAKit IOS Example.debug.xcconfig */,
+				47218AA74715C0CF88643D91 /* Pods-SAKit IOS Example.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4857539725389FDC002C68DA /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+				4857539F2538A091002C68DA /* LEEAlert */,
+			);
+			path = Vender;
+			sourceTree = "<group>";
+		};
+		4857539F2538A091002C68DA /* LEEAlert */ = {
+			isa = PBXGroup;
+			children = (
+				485753A22538A091002C68DA /* LEEAlert.h */,
+				485753A12538A091002C68DA /* LEEAlert.m */,
+				485753A02538A091002C68DA /* LEEAlertHelper.h */,
+			);
+			path = LEEAlert;
+			sourceTree = "<group>";
+		};
+		48693BA02536A2FC0089364E = {
+			isa = PBXGroup;
+			children = (
+				48693BAC2536A2FC0089364E /* SAKit */,
+				48693BBB2536A3190089364E /* SAKit IOS Example */,
+				48693BAB2536A2FC0089364E /* Products */,
+				48693C122536A37E0089364E /* Frameworks */,
+				41DBB8C37928319A23DB54E7 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		48693BAB2536A2FC0089364E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48693BAA2536A2FC0089364E /* SAKit.framework */,
+				48693BBA2536A3190089364E /* SAKit IOS Example.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		48693BAC2536A2FC0089364E /* SAKit */ = {
+			isa = PBXGroup;
+			children = (
+				48693BEA2536A3630089364E /* BSDIFF */,
+				4857539725389FDC002C68DA /* Vender */,
+				48693BD72536A3620089364E /* FilePreview */,
+				48693BDC2536A3620089364E /* FileDownloader */,
+				48693BAD2536A2FC0089364E /* SAKit.h */,
+				48693C0C2536A3720089364E /* SARouterNP.h */,
+				48693C0D2536A3720089364E /* SARouterNP.m */,
+				48693BAE2536A2FC0089364E /* Info.plist */,
+			);
+			path = SAKit;
+			sourceTree = "<group>";
+		};
+		48693BBB2536A3190089364E /* SAKit IOS Example */ = {
+			isa = PBXGroup;
+			children = (
+				48693BBC2536A3190089364E /* AppDelegate.h */,
+				48693BBD2536A3190089364E /* AppDelegate.m */,
+				48693BC22536A3190089364E /* ViewController.h */,
+				48693BC32536A3190089364E /* ViewController.m */,
+				48693C7B2536F2E50089364E /* DataModel.h */,
+				48693C7C2536F2E50089364E /* DataModel.m */,
+				48693BC52536A3190089364E /* Main.storyboard */,
+				48693BC82536A31A0089364E /* Assets.xcassets */,
+				48693BCA2536A31A0089364E /* LaunchScreen.storyboard */,
+				48693BCD2536A31A0089364E /* Info.plist */,
+				48693BCE2536A31A0089364E /* main.m */,
+			);
+			path = "SAKit IOS Example";
+			sourceTree = "<group>";
+		};
+		48693BD72536A3620089364E /* FilePreview */ = {
+			isa = PBXGroup;
+			children = (
+				489904D82537E950008AF2B4 /* SAFilePreviewViewController.h */,
+				489904D92537E950008AF2B4 /* SAFilePreviewViewController.m */,
+				484002EB253D98B0001C971A /* SAFilePreviewCell.h */,
+				484002EC253D98B0001C971A /* SAFilePreviewCell.m */,
+				4890CD152537F77E0058DE06 /* SAQFilePreviewController.h */,
+				4890CD162537F77E0058DE06 /* SAQFilePreviewController.m */,
+				484002E4253D7C75001C971A /* SAFPDownloaderOperation.h */,
+				484002E5253D7C75001C971A /* SAFPDownloaderOperation.m */,
+				4890CD1A2537F7D00058DE06 /* SAFileInfo.h */,
+				4890CD1B2537F7D00058DE06 /* SAFileInfo.m */,
+				4890CD28253835DE0058DE06 /* LEEAlert+FileDownload.h */,
+				4890CD29253835DE0058DE06 /* LEEAlert+FileDownload.m */,
+				4890CD3325384A8A0058DE06 /* NSObject+FileSize.h */,
+				4890CD3425384A8A0058DE06 /* NSObject+FileSize.m */,
+				485753A92538B292002C68DA /* UIViewController+SA.h */,
+				485753AA2538B292002C68DA /* UIViewController+SA.m */,
+				484002D6253D31E4001C971A /* SAFPCoreDataPersistence.h */,
+				484002D7253D31E4001C971A /* SAFPCoreDataPersistence.m */,
+				484002DB253D3241001C971A /* SAFPPersistence.h */,
+			);
+			path = FilePreview;
+			sourceTree = "<group>";
+		};
+		48693BDC2536A3620089364E /* FileDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				48693BE22536A3620089364E /* MMALoadersManager.h */,
+				48693BF02536A3630089364E /* MMALoadersManager.m */,
+				48693BDF2536A3620089364E /* MSTFileDownloader.h */,
+				48693BE92536A3630089364E /* MSTFileDownloader.m */,
+				48693BF12536A3630089364E /* MSTFileDownloaderConfig.h */,
+				48693BE12536A3620089364E /* MSTFileDownloaderConfig.m */,
+				48693BE62536A3620089364E /* MSTFileDownloaderError.h */,
+				48693BDD2536A3620089364E /* MSTFileDownloaderError.m */,
+				48693BE82536A3620089364E /* MSTFileDownloaderOperation.h */,
+				48693BE02536A3620089364E /* MSTFileDownloaderOperation.m */,
+				48693BE52536A3620089364E /* MSTFileDownloadToken.h */,
+				48693BDE2536A3620089364E /* MSTFileDownloadToken.m */,
+				48693BEF2536A3630089364E /* MSTFileManager.h */,
+				48693BE32536A3620089364E /* MSTFileManager.m */,
+				48693BE42536A3620089364E /* MSTRnLoaderMacros.h */,
+				48693BE72536A3620089364E /* MSTWebFileOperation.h */,
+			);
+			path = FileDownloader;
+			sourceTree = "<group>";
+		};
+		48693BEA2536A3630089364E /* BSDIFF */ = {
+			isa = PBXGroup;
+			children = (
+				48693BEB2536A3630089364E /* BSDIFF.m */,
+				48693BEC2536A3630089364E /* bsdpatch.c */,
+				48693BED2536A3630089364E /* bsdpatch.h */,
+				48693BEE2536A3630089364E /* BSDIFF.h */,
+			);
+			path = BSDIFF;
+			sourceTree = "<group>";
+		};
+		48693C122536A37E0089364E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48693C2D2536A7740089364E /* SSZipArchive.framework */,
+				48693C2A2536A7640089364E /* SSZipArchive.framework */,
+				48693C132536A37E0089364E /* libbz2.tbd */,
+				BB7CAFCFA0F40F0B68F5BFE3 /* libPods-SAKit.a */,
+				FCD8D52FED8DB87DDFF38676 /* libPods-SAKit IOS Example.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		48693BA52536A2FC0089364E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				484002DC253D324B001C971A /* SAFPPersistence.h in Headers */,
+				484002E6253D7C75001C971A /* SAFPDownloaderOperation.h in Headers */,
+				485753AB2538B292002C68DA /* UIViewController+SA.h in Headers */,
+				484002D8253D31E4001C971A /* SAFPCoreDataPersistence.h in Headers */,
+				484002ED253D98B0001C971A /* SAFilePreviewCell.h in Headers */,
+				48693BFE2536A3630089364E /* MSTFileDownloadToken.h in Headers */,
+				48693BF82536A3630089364E /* MSTFileDownloader.h in Headers */,
+				48693C052536A3630089364E /* bsdpatch.h in Headers */,
+				48693C012536A3630089364E /* MSTFileDownloaderOperation.h in Headers */,
+				48693C062536A3630089364E /* BSDIFF.h in Headers */,
+				48693C092536A3630089364E /* MSTFileDownloaderConfig.h in Headers */,
+				48693BFF2536A3630089364E /* MSTFileDownloaderError.h in Headers */,
+				48693C072536A3630089364E /* MSTFileManager.h in Headers */,
+				48693BFB2536A3630089364E /* MMALoadersManager.h in Headers */,
+				4890CD172537F77E0058DE06 /* SAQFilePreviewController.h in Headers */,
+				4890CD1C2537F7D00058DE06 /* SAFileInfo.h in Headers */,
+				489904DA2537E950008AF2B4 /* SAFilePreviewViewController.h in Headers */,
+				48693C002536A3630089364E /* MSTWebFileOperation.h in Headers */,
+				48693BAF2536A2FC0089364E /* SAKit.h in Headers */,
+				4890CD3525384A8A0058DE06 /* NSObject+FileSize.h in Headers */,
+				485753A52538A091002C68DA /* LEEAlert.h in Headers */,
+				485753A32538A091002C68DA /* LEEAlertHelper.h in Headers */,
+				4890CD2A253835DE0058DE06 /* LEEAlert+FileDownload.h in Headers */,
+				48693C0E2536A3720089364E /* SARouterNP.h in Headers */,
+				48693BFD2536A3630089364E /* MSTRnLoaderMacros.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		48693BA92536A2FC0089364E /* SAKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48693BB22536A2FC0089364E /* Build configuration list for PBXNativeTarget "SAKit" */;
+			buildPhases = (
+				8610C44E95CC11B5B2164525 /* [CP] Check Pods Manifest.lock */,
+				48693BA52536A2FC0089364E /* Headers */,
+				48693BA62536A2FC0089364E /* Sources */,
+				48693BA72536A2FC0089364E /* Frameworks */,
+				48693BA82536A2FC0089364E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SAKit;
+			productName = SAKit;
+			productReference = 48693BAA2536A2FC0089364E /* SAKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		48693BB92536A3190089364E /* SAKit IOS Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48693BD02536A31A0089364E /* Build configuration list for PBXNativeTarget "SAKit IOS Example" */;
+			buildPhases = (
+				5EB6340020B1230D79E14574 /* [CP] Check Pods Manifest.lock */,
+				48693BB62536A3190089364E /* Sources */,
+				48693BB72536A3190089364E /* Frameworks */,
+				48693BB82536A3190089364E /* Resources */,
+				485753F8253997DF002C68DA /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				485753F7253997DF002C68DA /* PBXTargetDependency */,
+			);
+			name = "SAKit IOS Example";
+			productName = "SAKit IOS Example";
+			productReference = 48693BBA2536A3190089364E /* SAKit IOS Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		48693BA12536A2FC0089364E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1200;
+				ORGANIZATIONNAME = zhongjun;
+				TargetAttributes = {
+					48693BA92536A2FC0089364E = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					48693BB92536A3190089364E = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 48693BA42536A2FC0089364E /* Build configuration list for PBXProject "SAKit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 48693BA02536A2FC0089364E;
+			productRefGroup = 48693BAB2536A2FC0089364E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				48693BA92536A2FC0089364E /* SAKit */,
+				48693BB92536A3190089364E /* SAKit IOS Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		48693BA82536A2FC0089364E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48693BB82536A3190089364E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48693BCC2536A31A0089364E /* LaunchScreen.storyboard in Resources */,
+				48693BC92536A31A0089364E /* Assets.xcassets in Resources */,
+				48693BC72536A3190089364E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5EB6340020B1230D79E14574 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SAKit IOS Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8610C44E95CC11B5B2164525 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SAKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		48693BA62536A2FC0089364E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48693C042536A3630089364E /* bsdpatch.c in Sources */,
+				48693C0F2536A3720089364E /* SARouterNP.m in Sources */,
+				485753A42538A091002C68DA /* LEEAlert.m in Sources */,
+				48693C082536A3630089364E /* MMALoadersManager.m in Sources */,
+				48693C022536A3630089364E /* MSTFileDownloader.m in Sources */,
+				48693BF62536A3630089364E /* MSTFileDownloaderError.m in Sources */,
+				4890CD1D2537F7D00058DE06 /* SAFileInfo.m in Sources */,
+				489904DB2537E950008AF2B4 /* SAFilePreviewViewController.m in Sources */,
+				48693BF92536A3630089364E /* MSTFileDownloaderOperation.m in Sources */,
+				48693BFA2536A3630089364E /* MSTFileDownloaderConfig.m in Sources */,
+				48693BFC2536A3630089364E /* MSTFileManager.m in Sources */,
+				484002D9253D31E4001C971A /* SAFPCoreDataPersistence.m in Sources */,
+				4890CD2B253835DE0058DE06 /* LEEAlert+FileDownload.m in Sources */,
+				484002EE253D98B0001C971A /* SAFilePreviewCell.m in Sources */,
+				4890CD3625384A8A0058DE06 /* NSObject+FileSize.m in Sources */,
+				485753AC2538B292002C68DA /* UIViewController+SA.m in Sources */,
+				484002E7253D7C75001C971A /* SAFPDownloaderOperation.m in Sources */,
+				4890CD182537F77E0058DE06 /* SAQFilePreviewController.m in Sources */,
+				48693BF72536A3630089364E /* MSTFileDownloadToken.m in Sources */,
+				48693C032536A3630089364E /* BSDIFF.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48693BB62536A3190089364E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48693BC42536A3190089364E /* ViewController.m in Sources */,
+				48693C7D2536F2E50089364E /* DataModel.m in Sources */,
+				48693BBE2536A3190089364E /* AppDelegate.m in Sources */,
+				48693BCF2536A31A0089364E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		485753F7253997DF002C68DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48693BA92536A2FC0089364E /* SAKit */;
+			targetProxy = 485753F6253997DF002C68DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		48693BC52536A3190089364E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48693BC62536A3190089364E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		48693BCA2536A31A0089364E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48693BCB2536A31A0089364E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		48693BB02536A2FC0089364E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		48693BB12536A2FC0089364E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		48693BB32536A2FC0089364E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7625809AE0C7AA8A80FCD562 /* Pods-SAKit.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = L4DFRU2343;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/SAKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "zhongjunkeji.SAKit-ios";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		48693BB42536A2FC0089364E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 974DD216CB468D8DF97155F3 /* Pods-SAKit.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = L4DFRU2343;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/SAKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "zhongjunkeji.SAKit-ios";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		48693BD12536A31A0089364E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A693004A5FB105C7DB1A5D38 /* Pods-SAKit IOS Example.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L4DFRU2343;
+				INFOPLIST_FILE = "SAKit IOS Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "zhongjunkeji.SAKit-IOS-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		48693BD22536A31A0089364E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47218AA74715C0CF88643D91 /* Pods-SAKit IOS Example.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L4DFRU2343;
+				INFOPLIST_FILE = "SAKit IOS Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "zhongjunkeji.SAKit-IOS-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		48693BA42536A2FC0089364E /* Build configuration list for PBXProject "SAKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48693BB02536A2FC0089364E /* Debug */,
+				48693BB12536A2FC0089364E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48693BB22536A2FC0089364E /* Build configuration list for PBXNativeTarget "SAKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48693BB32536A2FC0089364E /* Debug */,
+				48693BB42536A2FC0089364E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48693BD02536A31A0089364E /* Build configuration list for PBXNativeTarget "SAKit IOS Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48693BD12536A31A0089364E /* Debug */,
+				48693BD22536A31A0089364E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 48693BA12536A2FC0089364E /* Project object */;
+}
