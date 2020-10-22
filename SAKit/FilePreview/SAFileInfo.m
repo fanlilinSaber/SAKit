@@ -11,6 +11,10 @@
 #import "SAFPCoreDataPersistence.h"
 #import "MSTFileDownloaderOperation.h"
 
+@interface SAFileInfo ()
+@property (nonatomic, strong) SAFPCoreDataFlow *localInfo;
+@end
+
 @implementation SAFileInfo
 
 - (BOOL)isHasLocal

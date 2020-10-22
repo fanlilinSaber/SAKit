@@ -39,12 +39,22 @@
 /*&* 取消成功后回调 */
 @property (nonatomic, copy) void (^cancelBlock)(void);
 
+/// 初始化一个文件下载管理对象
+/// @param downloadOperation 下载队列
+/// @param url 下载url
+/// @param taskIdentifier 任务标识
+/// @param downloader 下载器
+/// @param downloadOperationCancelToken 下载队列Token
 - (instancetype)initWithDownloadOperation:(NSOperation<MSTFileDownloaderOperation> *)downloadOperation
                                       url:(NSURL *)url 
                            taskIdentifier:(NSString *)taskIdentifier
                                downloader:(MSTFileDownloader *)downloader
              downloadOperationCancelToken:(id)downloadOperationCancelToken;
 
+/// 监听一个下载任务
+/// @param progressBlock 下载进度
+/// @param unzProgressBlock 解压进度
+/// @param completedBlock 完成回调
 - (MSTFileDownloadToken *)listenerForProgress:(MSTFileDownloaderProgressBlock)progressBlock
                                   unzProgress:(MSTFileDownloaderUNZProgressBlock)unzProgressBlock
                                     completed:(MSTFileDownloaderCompletedBlock)completedBlock;

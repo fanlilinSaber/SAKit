@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SAFileInfo : NSObject
 /*&* 本地缓存的文件信息 */
-@property (nonatomic, strong) SAFPCoreDataFlow *localInfo;
+@property (nonatomic, strong, readonly) SAFPCoreDataFlow *localInfo;
 /*&* 下载地址 */
 @property (nonatomic, copy) NSString *downloadUrl;
 /*&* 本地是否有数据 */

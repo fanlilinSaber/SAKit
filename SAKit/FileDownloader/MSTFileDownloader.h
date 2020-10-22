@@ -52,12 +52,25 @@ typedef NS_OPTIONS(NSUInteger, MSTFileDownloaderOptions) {
                                     unzProgress:(MSTFileDownloaderUNZProgressBlock)unzProgressBlock
                                       completed:(MSTFileDownloaderCompletedBlock)completedBlock;
 
+/// 初始化一个下载任务
+/// @param url 下载文件url
+/// @param ownFileName 文件名（用于写入沙盒的文件命名，不设置 默认用下载url Hash命名）
+/// @param progressBlock 下载进度回调
+/// @param unzProgressBlock 解压进度回调
+/// @param completedBlock 完成回调
 - (MSTFileDownloadToken *)downloadFileWithURL:(NSURL *)url
                                     ownFileName:(NSString *)ownFileName
                                        progress:(MSTFileDownloaderProgressBlock)progressBlock
                                     unzProgress:(MSTFileDownloaderUNZProgressBlock)unzProgressBlock
                                       completed:(MSTFileDownloaderCompletedBlock)completedBlock;
 
+/// 初始化一个下载任务
+/// @param url 下载文件url
+/// @param ownFileName 文件名（用于写入沙盒的文件命名，不设置 默认用下载url Hash命名）
+/// @param taskIdentifier 下载任务标识
+/// @param progressBlock 下载进度回调
+/// @param unzProgressBlock 解压进度回调
+/// @param completedBlock 完成回调
 - (MSTFileDownloadToken *)downloadFileWithURL:(NSURL *)url
                                     ownFileName:(NSString *)ownFileName
                                  taskIdentifier:(NSString *)taskIdentifier
