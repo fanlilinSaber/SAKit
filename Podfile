@@ -3,7 +3,7 @@
 
 target 'SAKit' do
   # Comment the next line if you don't want to use dynamic frameworks
-  use_modular_headers!
+#  use_modular_headers!
 pod 'SSZipArchive'
 pod 'AFNetworking', '~> 3.0'
   # Pods for SAKit
@@ -12,7 +12,7 @@ end
 
 target 'SAKit IOS Example' do
   # Comment the next line if you don't want to use dynamic frameworks
-  use_modular_headers!
+#  use_modular_headers!
 pod 'Masonry'
 #pod 'AFNetworking', '~> 3.0'
   # Pods for SAKit IOS Example

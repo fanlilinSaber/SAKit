@@ -197,6 +197,7 @@
 		4857539725389FDC002C68DA /* Vender */ = {
 			isa = PBXGroup;
 			children = (
+				48693BEA2536A3630089364E /* BSDIFF */,
 				4857539F2538A091002C68DA /* LEEAlert */,
 			);
 			path = Vender;
@@ -235,13 +236,11 @@
 		48693BAC2536A2FC0089364E /* SAKit */ = {
 			isa = PBXGroup;
 			children = (
-				48693BEA2536A3630089364E /* BSDIFF */,
+				488157262541C5810011380B /* Router */,
 				4857539725389FDC002C68DA /* Vender */,
 				48693BD72536A3620089364E /* FilePreview */,
 				48693BDC2536A3620089364E /* FileDownloader */,
 				48693BAD2536A2FC0089364E /* SAKit.h */,
-				48693C0C2536A3720089364E /* SARouterNP.h */,
-				48693C0D2536A3720089364E /* SARouterNP.m */,
 				48693BAE2536A2FC0089364E /* Info.plist */,
 			);
 			path = SAKit;
@@ -335,6 +334,15 @@
 				FCD8D52FED8DB87DDFF38676 /* libPods-SAKit IOS Example.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		488157262541C5810011380B /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				48693C0C2536A3720089364E /* SARouterNP.h */,
+				48693C0D2536A3720089364E /* SARouterNP.m */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
